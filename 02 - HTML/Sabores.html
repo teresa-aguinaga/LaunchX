@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: #A25C7C;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: white;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: white;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #A25C7C ;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src=logo.png alt="Logo" width="50px" height="50px">
+        <h1>Sabores</h1><hr>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="Index.html" target="_blank">Inicio</a></li>
+                <li><a href="Adornos.html" target="_blank">Adornos</a></li>
+            </ul>
+           <a href="Pedido.html" target="_blank"><input type="button" id="boton1" name="boton1" value="Hacer pedido"></a>
+        </nav>
+
+        <article>
+
+            <table>
+        <tr>
+            <th>Vainilla - $150</th>
+            <th>Chocolate - $200</th>
+            <th>Fresa - $180</th>
+        </tr>
+        <tr>
+            <td><img src="https://cdn2.cocinadelirante.com/sites/default/files/images/2017/06/esponjosopasteldevanilla.jpg" width="150px" height="150px"></td>
+            <td><img src="https://laverdadnoticias.com/__export/1616420829965/sites/laverdad/img/2021/03/22/pastel_chocolate_recetas_faciles_postres_1.jpg_1257022068.jpg" width="150px" height="150px"></td>
+            <td><img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2017/10/pasteldefresasconcremafacil.jpg" width="150px" height="150px"></td>
+        </tr>
+    </table>
+        </article>
+    </section>
+
+    <footer>
+        <div class="col-md-12 col-sm-12">
+            <h4 style="font-size: 24px; font-weight: bolder;">+52 (444) 1234567<br><span style="font-size: 14px;font-weight: normal;">Lunes a Viernes de 9:00 am a 6:00 pm <br> Sábados de 9:00 am a 2:00 pm</span></h4></div>
+            <h4 style="font-size: 24px; font-weight: bolder;">Ubicación<br><span style="font-weight: normal;font-size: 14px;">San Luis Potosí</h4>
+        </div>
+                           
+    </footer>
+
+</body>
+
+</html>
